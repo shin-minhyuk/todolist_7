@@ -1,42 +1,73 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  padding: 12px;
+  display: grid;
+  gap: 12px;
+}
+
+h1 {
+  font-size: 36px;
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h2 {
+  font-size: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section {
+  display: flex;
+  gap: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+button {
+  padding: 6px 18px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin: 0 4px;
+  cursor: pointer;
 }
 
-.card {
-  padding: 2em;
+button:hover {
+  background-color: #7a7a7a;
+  color: #fff;
+}
+input {
+  padding: 5px;
+}
+input[type="text"] {
+  width: 70%;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+li > div:last-child {
+  display: flex;
+  align-items: end;
 }
 
-.read-the-docs {
-  color: #888;
+li > p {
+  flex: 1;
+  margin: 0;
+  padding: 6px 0;
+}
+
+.clock {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.advice {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.time {
+  padding: 0 40px;
+}
+.current {
+  background-color: rgb(230, 234, 255);
 }
